@@ -63,7 +63,7 @@ int sqr(int operand 1);
 * @return integer value of the operand1 ^3 operand2
 * @note returns 0 for divide by 0 error
 */
-int cube(int operand 1)
+int cube(int operand 1);
 
 /**
 * cubes the operand1 and returns the result 
@@ -72,7 +72,7 @@ int cube(int operand 1)
 * @return integer value of the sqrt(operand1)
 * @note returns 0 for negative number
 */
-int squareroot(int operand1)
+int squareroot(int operand1);
 
 /**
 * square roots the operand1 by operand2 and returns the result 
@@ -81,7 +81,7 @@ int squareroot(int operand1)
 * @return integer value of the cuberoot(operand1)
 * @note returns 0 for negative number
 */
-int cuberoot(int operand1)
+int cuberoot(int operand1);
 /**
 * divides the operand1 by operand2 and returns the result 
 * @param[in] operand1 
@@ -89,7 +89,7 @@ int cuberoot(int operand1)
 * @return integer value of the operand1^operand2
 * @note returns 0 for divide by 0 error
 */
-int exp(int operand1,int operand2)
+int exp(int operand1,int operand2);
 
 
 #endif
