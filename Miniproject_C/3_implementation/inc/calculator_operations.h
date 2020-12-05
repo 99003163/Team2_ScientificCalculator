@@ -70,7 +70,7 @@ int cube(int operand 1)
 * @param[in] operand1 
 * @param[in] operand2 
 * @return integer value of the sqrt(operand1)
-* @note returns 0 for divide by 0 error
+* @note returns 0 for negative number
 */
 int squareroot(int operand1)
 
@@ -79,7 +79,7 @@ int squareroot(int operand1)
 * @param[in] operand1 
 * @param[in] operand2 
 * @return integer value of the cuberoot(operand1)
-* @note returns 0 for divide by 0 error
+* @note returns 0 for negative number
 */
 int cuberoot(int operand1)
 /**
