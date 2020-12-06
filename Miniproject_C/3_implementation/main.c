@@ -268,7 +268,7 @@ void calculator_menu(void)
             break;
         
         case NOT:
-            printf("\n\tNOT %d = %d\nEnter to continue", calculator_operand1, calculator_operand2, NOT(calculator_operand1));
+            printf("\n\tNOT %d = %d\nEnter to continue", calculator_operand1, calculator_operand2, not(calculator_operand1));
         
             __fpurge(stdin);
             getchar();
