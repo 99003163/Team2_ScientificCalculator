@@ -309,7 +309,3 @@ void test_xnor(void) {
  /* Dummy fail*/
  CU_ASSERT(9 == xnor (8, 15);
 }
-
-
-
-
