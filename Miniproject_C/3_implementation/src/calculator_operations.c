@@ -29,6 +29,15 @@ int square(int operand1)
     return operand1*operand1;
 }
 
+ int cube(int operand1)
+{
+    return operand1*operand1*operand1;
+}
+int cuberoot(int operand1)
+{
+    return cbrt(operand1);
+}
+
 int power(int operand1, int operand2)
 {
     if(operand2==0)
