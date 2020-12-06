@@ -13,7 +13,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, SQUARE, POWER, PRIME, GREATER, SMALLER, FACTORIAL, MODULUS, SQUAREROOT, SIN, COS, TAN, CMTOM, MTOCM, MTOKM, KMTOM, INCHTOCM, CMTOINCH, AND, OR, NOT, NAND, NOR, XOR, XNOR, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, SQUARE, CUBE, CUBEROOT, POWER, PRIME, GREATER, SMALLER, FACTORIAL, MODULUS, SQUAREROOT, SIN, COS, TAN, CMTOM, MTOCM, MTOKM, KMTOM, INCHTOCM, CMTOINCH, AND, OR, NOT, NAND, NOR, XOR, XNOR, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -205,7 +205,7 @@ void calculator_menu(void)
             getchar();
             break;
           case MTOCM:
-            printf("\n\t %f in cm is %f  \nEnter to continue", 
+            printf("\n\t %ld in cm is %ld  \nEnter to continue", 
             calculator_operand1, 
             metertocenti(calculator_operand1));
             
@@ -213,7 +213,7 @@ void calculator_menu(void)
             getchar();
             break;
           case CMTOM:
-            printf("\n\t %f in m is %f  \nEnter to continue", 
+            printf("\n\t %ld in m is %ld  \nEnter to continue", 
             calculator_operand1, 
             centitometer(calculator_operand1));
             
@@ -221,7 +221,7 @@ void calculator_menu(void)
             getchar();
             break;
           case MTOKM:
-            printf("\n\t %f in km is %f  \nEnter to continue", 
+            printf("\n\t %ld in km is %ld  \nEnter to continue", 
             calculator_operand1, 
             metertokm(calculator_operand1));
             
@@ -237,7 +237,7 @@ void calculator_menu(void)
             getchar();
             break;
           case INCHTOCM:
-            printf("\n\t %f in cm is %f  \nEnter to continue", 
+            printf("\n\t %ld in cm is %ld  \nEnter to continue", 
             calculator_operand1, 
             inchtocenti(calculator_operand1));
             
@@ -245,7 +245,7 @@ void calculator_menu(void)
             getchar();
             break;
           case CMTOINCH:
-            printf("\n\t %f in inch is %f  \nEnter to continue", 
+            printf("\n\t %ld in inch is %ld \nEnter to continue", 
             calculator_operand1, 
             centitoinch(calculator_operand1));
             
