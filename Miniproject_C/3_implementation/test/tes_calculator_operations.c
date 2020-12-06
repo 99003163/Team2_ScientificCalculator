@@ -128,7 +128,7 @@ void test_cube(void) {
 }
 
 void test_cuberoot(void) {
- CU_ASSERT(100 == cuberoot(10));
+ CU_ASSERT(10 == cuberoot(1000));
  
  /* Dummy fail*/
  CU_ASSERT(5 == cuberoot(343));
