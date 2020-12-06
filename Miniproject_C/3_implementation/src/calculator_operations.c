@@ -1,4 +1,3 @@
-
 #include <calculator_operations.h>
 #include <math.h>
 
@@ -24,37 +23,22 @@ int divide(int operand1, int operand2)
     else
         return operand1 / operand2;
 }
-int modulo(int operand1, int operand2)
-{
-    if(0 == operand2)
-        return 0;
-    else
-        return operand1 % operand2;
-}
-int sqr(int operand 1)
+
+int square(int operand1)
 {
     return operand1*operand1;
 }
-int cube(int operand 1)
+
+int power(int operand1, int operand2)
 {
-    return operand1*operand1*operand1;
-}
-int squareroot(int operand1)
-{
-    return sqrt(operand1);
-}
-int cuberoot(int operand1)
-{
-    return cbrt(operand1);
-}
-int exp(int operand1,int operand2){
-    if(operand2 ==0)
+    if(operand2==0)
         return 1;
-    else if (operand2==1)
+    else if(operand2==1)
         return operand1;
-    else 
-        return pow(operand1,operand2); 
+    else
+        return pow(operand1, operand2);
 }
+
 int prime(int operand1)
 {
     /* return -1 if a negative number*/
@@ -106,6 +90,17 @@ int factorial(int number)
   /* Recursively calculate Factorial of the number */
   return number * factorial(number-1);
 }
+
+int modulus(int operand1, int operand2)
+{
+    return operand1 % operand2;
+}
+
+int squareroot(int operand1)
+{
+    return sqrt(operand1);
+}
+
 double sinvalue(int operand1)
 {
     return sin(operand1);
