@@ -73,6 +73,7 @@ void calculator_menu(void)
             getchar();
             break;
             
+            
         case SUBTRACT:
             printf("\n\t%d - %d = %d\nEnter to continue", 
             calculator_operand1, 
