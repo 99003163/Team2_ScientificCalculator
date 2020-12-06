@@ -247,3 +247,4 @@ int valid_operation(int operation)
     /* Check if the operation is a valid operation */
     return ((ADD <= operation) && (EXIT >= operation)) ? VALID: INVALID;
 }
+
