@@ -1,7 +1,6 @@
 #include <calculator_operations.h>
 #include <math.h>
 
-
 /* Status of the operation requested */
 #define VALID   (1)
 #define INVALID (0)
@@ -101,10 +100,26 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-         case SQUARE:
+        case SQUARE:
             printf("\n\t Square of %d is %d \nEnter to continue", 
             calculator_operand1, 
             square(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case CUBE:
+            printf("\n\t Cube of %d is %d \nEnter to continue", 
+            calculator_operand1, 
+            cube(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case CUBEROOT:
+            printf("\n\t Cuberoot of %d is %d \nEnter to continue", 
+            calculator_operand1, 
+            cuberoot(calculator_operand1));
             
             __fpurge(stdin);
             getchar();
