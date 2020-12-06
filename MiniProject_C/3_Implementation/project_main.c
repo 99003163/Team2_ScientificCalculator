@@ -13,7 +13,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, SQUARE, CUBE, CUBEROOT, POWER, PRIME, GREATER, SMALLER, FACTORIAL, MODULUS, SQUAREROOT, SIN, COS, TAN, CMTOM, MTOCM, MTOKM, KMTOM, INCHTOCM, CMTOINCH, AND, OR, NOT, NAND, NOR, XOR, XNOR, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, SQUARE, POWER, PRIME, GREATER, SMALLER, FACTORIAL, MODULUS, SQUAREROOT, SIN, COS, TAN, CMTOM, MTOCM, MTOKM, KMTOM, INCHTOCM, CMTOINCH, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Square\n6. Power\n7. Prime\n8. Greater\n.9 Smaller\n10. Factorial\n11. Modulus\n12. SquareRoot\n13. Sin\n14. Cos\n15. Tan\n16. CMTOM\n17. MTOCM\n18. MTOKM\n19. KMTOM\n20. INCHTOCM\n21. CMTOINCH\n22. AND\n23. OR\n24. NOT\n25. NAND\n26. NOR\n27. XOR\n28. XNOR\n29. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Square\n6. Power\n7. Prime\n8. Greater\n.9 Smaller\n10. Factorial\n11. Modulus\n12. SquareRoot\n13. Sin\n14. Cos\n15. Tan\n16. CMTOM\n17. MTOCM\n18. MTOKM\n19. KMTOM\n20. INCHTOCM\n21. CMTOINCH\n22. Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
@@ -71,8 +71,6 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-            
-            
         case SUBTRACT:
             printf("\n\t%d - %d = %d\nEnter to continue", 
             calculator_operand1, 
@@ -100,26 +98,10 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case SQUARE:
+         case SQUARE:
             printf("\n\t Square of %d is %d \nEnter to continue", 
             calculator_operand1, 
             square(calculator_operand1));
-            
-            __fpurge(stdin);
-            getchar();
-            break;
-        case CUBE:
-            printf("\n\t Cube of %d is %d \nEnter to continue", 
-            calculator_operand1, 
-            cube(calculator_operand1));
-            
-            __fpurge(stdin);
-            getchar();
-            break;
-        case CUBEROOT:
-            printf("\n\t Cuberoot of %d is %d \nEnter to continue", 
-            calculator_operand1, 
-            cuberoot(calculator_operand1));
             
             __fpurge(stdin);
             getchar();
@@ -205,7 +187,7 @@ void calculator_menu(void)
             getchar();
             break;
           case MTOCM:
-            printf("\n\t %ld in cm is %ld  \nEnter to continue", 
+            printf("\n\t %f in cm is %f  \nEnter to continue", 
             calculator_operand1, 
             metertocenti(calculator_operand1));
             
@@ -213,7 +195,7 @@ void calculator_menu(void)
             getchar();
             break;
           case CMTOM:
-            printf("\n\t %ld in m is %ld  \nEnter to continue", 
+            printf("\n\t %f in m is %f  \nEnter to continue", 
             calculator_operand1, 
             centitometer(calculator_operand1));
             
@@ -221,7 +203,7 @@ void calculator_menu(void)
             getchar();
             break;
           case MTOKM:
-            printf("\n\t %ld in km is %ld  \nEnter to continue", 
+            printf("\n\t %f in km is %f  \nEnter to continue", 
             calculator_operand1, 
             metertokm(calculator_operand1));
             
@@ -237,7 +219,7 @@ void calculator_menu(void)
             getchar();
             break;
           case INCHTOCM:
-            printf("\n\t %ld in cm is %ld  \nEnter to continue", 
+            printf("\n\t %f in cm is %f  \nEnter to continue", 
             calculator_operand1, 
             inchtocenti(calculator_operand1));
             
@@ -245,64 +227,14 @@ void calculator_menu(void)
             getchar();
             break;
           case CMTOINCH:
-            printf("\n\t %ld in inch is %ld \nEnter to continue", 
+            printf("\n\t %f in inch is %f  \nEnter to continue", 
             calculator_operand1, 
             centitoinch(calculator_operand1));
             
             __fpurge(stdin);
             getchar();
             break;
-        
-        case AND:
-            printf("\n\t%d AND %d = %d\nEnter to continue", calculator_operand1, calculator_operand2, and(calculator_operand1, calculator_operand2));
-        
-            __fpurge(stdin);
-            getchar();
-            break;
-
-        case OR:
-            printf("\n\t%d OR %d = %d\nEnter to continue", calculator_operand1, calculator_operand2, or(calculator_operand1, calculator_operand2));
-        
-            __fpurge(stdin);
-            getchar();
-            break;
-        
-        case NOT:
-            printf("\n\tNOT %d = %d\nEnter to continue", calculator_operand1, calculator_operand2, not(calculator_operand1));
-        
-            __fpurge(stdin);
-            getchar();
-            break;
-
-        case NAND:
-            printf("\n\t%d NAND %d = %d\nEnter to continue", calculator_operand1, calculator_operand2, nand(calculator_operand1, calculator_operand2));
-        
-            __fpurge(stdin);
-            getchar();
-            break;
-          
-        case NOR:
-            printf("\n\t%d NOR %d = %d\nEnter to continue", calculator_operand1, calculator_operand2, nor(calculator_operand1, calculator_operand2));
-        
-            __fpurge(stdin);
-            getchar();
-            break;
-
-        case XOR:
-            printf("\n\t%d XOR %d = %d\nEnter to continue", calculator_operand1, calculator_operand2, xor(calculator_operand1, calculator_operand2));
-        
-            __fpurge(stdin);
-            getchar();
-            break;
-
-         case XNOR:
-            printf("\n\t%d XNOR %d = %d\nEnter to continue", calculator_operand1, calculator_operand2, xnor(calculator_operand1, calculator_operand2));
-        
-            __fpurge(stdin);
-            getchar();
-            break;
-
-        case 29:
+        case 22:
             exit(0);
             break;
         default:
