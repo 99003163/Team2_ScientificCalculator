@@ -226,3 +226,4 @@ void test_inchtocenti(void) {
   /* Dummy fail*/
   CU_ASSERT(1 == inchtocenti(12));
 }
+
