@@ -183,4 +183,59 @@ float inchtocenti(float operand1);
 * @return operand1 in inch
 */
 float centitoinch(float operand1);
+
+/**
+* Perform logical AND operation between the operand1, operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of operand1 & operand2
+*/
+int and(int num1, int num2);
+
+/**
+* Perform logical OR operation between the operand1, operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of operand1 | operand2
+*/
+int or(int num1, int num2);
+
+/**
+* Perform logical NOT operation on the operand1 and returns the result
+* @param[in] operand1 
+* @return Result of ~operand1
+*/
+int not(int num1);
+
+/**
+* Perform logical NAND operation between the operand1, operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of ~(operand1 & operand2)
+*/
+int nand(int num1, int num2);
+
+/**
+* Perform logical NOR operation between the operand1, operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of ~(operand1 | operand2)
+*/
+int nor(int num1, int num2);
+
+/**
+* Perform logical XOR operation between the operand1, operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of operand1 ^ operand2
+*/
+int xor(int num1, int num2);
+
+/**
+* Perform logical XNOR operation between the operand1, operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of ~(operand1 ^ operand2)
+*/
+int xnor(int num1, int num2);
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
