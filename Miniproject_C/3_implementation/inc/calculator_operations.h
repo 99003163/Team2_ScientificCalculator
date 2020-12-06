@@ -1,9 +1,15 @@
+/** 
+* @file calculator_operations.h
+* Calculator application with many mathematical operations
+*
+*/
 #ifndef __CALCULATOR_OPERATIONS_H__
 #define __CALCULATOR_OPERATIONS_H__
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdio_ext.h>
+#include <math.h>
 /**
 *  adds the operand1 and operand2 and returns the result
 * @param[in] operand1 
