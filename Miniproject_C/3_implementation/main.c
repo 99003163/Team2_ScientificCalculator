@@ -72,6 +72,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
+            
         case SUBTRACT:
             printf("\n\t%d - %d = %d\nEnter to continue", 
             calculator_operand1, 
