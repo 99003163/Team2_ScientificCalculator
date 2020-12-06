@@ -169,3 +169,4 @@ float inchtocenti(float operand1);
 * @return operand1 in inch
 */
 float centitoinch(float operand1);
+#endif  /* #define __CALCULATOR_OPERATIONS_H__ */
