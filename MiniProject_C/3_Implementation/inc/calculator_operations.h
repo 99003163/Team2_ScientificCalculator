@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdio_ext.h>
+#include <math.h>
 
 /**
 *  adds the operand1 and operand2 and returns the result
@@ -168,5 +169,3 @@ float inchtocenti(float operand1);
 * @return operand1 in inch
 */
 float centitoinch(float operand1);
-
-#endif  /* #define __CALCULATOR_OPERATIONS_H__ */
