@@ -29,15 +29,6 @@ int square(int operand1)
     return operand1*operand1;
 }
 
- int cube(int operand1)
-{
-    return operand1*operand1*operand1;
-}
-int cuberoot(int operand1)
-{
-    return cbrt(operand1);
-}
-
 int power(int operand1, int operand2)
 {
     if(operand2==0)
@@ -93,12 +84,11 @@ int factorial(int number)
     return -1;
 
   /* Return 1 for 0 */
-  else if(number == 0)
+  if(number == 0)
     return 1;
 
   /* Recursively calculate Factorial of the number */
-  else
-    return number * factorial(number-1);
+  return number * factorial(number-1);
 }
 
 int modulus(int operand1, int operand2)
@@ -154,39 +144,4 @@ float inchtocenti(float operand1)
 float centitoinch(float operand1)
 {
     return operand1/2.54;
-}
-
-int and(int num1, int num2){
-    int result = num1 & num2;
-    return result;
-}
-
-int or(int num1, int num2){
-    int result = num1 | num2;
-    return result;
-}
-
-int not(int num1){
-    int result = ~num1;
-    return result;
-}
-
-int nand(int num1, int num2){
-    int result = ~(num1 & num2);
-    return result;
-}
-
-int nor(int num1, int num2){
-    int result = ~(num1 | num2);
-    return result;
-}
-
-int xor(int num1, int num2){
-    int result = num1 ^ num2;
-    return result;
-}
-
-int xnor(int num1, int num2){
-    int result = ~(num1 ^ num2);
-    return result;
 }
