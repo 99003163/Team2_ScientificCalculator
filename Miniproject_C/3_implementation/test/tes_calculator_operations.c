@@ -4,6 +4,7 @@
 #include <calculator_operations.h>
 #define PROJECT_NAME "Calculator"
 
+
 /* Prototypes for all the test functions */
 void test_add(void);
 void test_subtract(void);
